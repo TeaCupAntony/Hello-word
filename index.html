@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hello World</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="page-shell">
+      <section class="app-panel" aria-labelledby="app-title">
+        <h1 id="app-title">Hello World</h1>
+
+        <div class="color-actions" aria-label="Выбор цвета текста">
+          <button class="button button-green" type="button" id="green-button">
+            Зеленый
+          </button>
+          <button class="button button-orange" type="button" id="orange-button">
+            Оранжевый
+          </button>
+        </div>
+
+        <form class="name-form" id="name-form">
+          <label for="name-input">Имя для приветствия</label>
+          <div class="input-row">
+            <input
+              id="name-input"
+              name="name"
+              type="text"
+              autocomplete="off"
+              placeholder="Например: Настя"
+            />
+            <button class="button button-dark" type="submit">Показать</button>
+          </div>
+        </form>
+
+        <div class="result-box" aria-live="polite">
+          <span class="result-label">Результат</span>
+          <p id="greeting-output">Введите имя и нажмите кнопку.</p>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
